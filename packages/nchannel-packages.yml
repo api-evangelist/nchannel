@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/nChannel
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (nchannel.com,
+  security/nchannel-domain-security.yml) or its accepted GitHub org (nChannel).'
+packages:
+- name: custom-ebay-api
+  registry: github
+  url: https://github.com/nChannel/custom-ebay-api
+  language: JavaScript
+  official: true
+  version: null
+  published: '2016-08-29'
+  source_repo: https://github.com/nChannel/custom-ebay-api
+  evidence: repository in github.com/nChannel, whose profile names the provider's domain

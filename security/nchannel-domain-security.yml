@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: nchannel.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar  3 06:01:24 2027 GMT
+  hsts: false
+domains:
+- domain: nchannel.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

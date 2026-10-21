@@ -1,23 +1,77 @@
 aid: nchannel
+
 name: nChannel
-description: 'nChannel is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.nchannel.com/wp-content/uploads/2014/10/social-logo.png
+
+description: 'nChannel is a SaaS integration platform that empowers retailers and wholesalers to synchronize data across eCommerce, ERP, POS, and 3PL systems. It automates processes such as order fulfillment, inventory synchronization, and supply chain management, providing a unified hub for seamless data flow between disparate business applications.'
+
 url: https://raw.githubusercontent.com/api-evangelist/nchannel/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- eCommerce
+- Integration
+- SaaS
+- Retail
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/nchannel-hosts.yml
+- type: Vendors
+  url: vendors/nchannel-vendors.yml
+- type: SDKs
+  url: packages/nchannel-packages.yml
+- type: Packages
+  url: packages/nchannel-packages.yml
+- type: Support
+  url: https://help.nchannel.com/support/home
+- type: SignUp
+  url: https://www.nchannel.com/blog/register-today-for-a-sneak-peak-of-nchannels-new-gp-connector/
+- type: Security
+  url: https://www.nchannel.com/security/
+- type: PrivacyPolicy
+  url: https://www.nchannel.com/privacy-policy/
+- type: DeveloperPortal
+  url: https://portal.nchannel.com/
+- type: GettingStarted
+  url: https://help.nchannel.com/support/solutions/folders/33000204610
+- type: GitHubOrganization
+  url: https://github.com/nChannel
+- type: DomainSecurity
+  url: security/nchannel-domain-security.yml
 - type: Website
   url: https://nchannel.com/
+- type: Blog
+  url: https://www.nchannel.com/blog/
+- type: Pricing
+  url: https://www.nchannel.com/pricing/
+- type: Documentation
+  url: https://www.nchannel.com/blog/
+
+apis: []
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
